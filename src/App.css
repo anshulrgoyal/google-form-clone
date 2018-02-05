@@ -1,0 +1,60 @@
+.container{
+  padding: 10%
+}
+
+.btn{
+  margin: 9px;
+  background-color: cornflowerblue;
+  color:black;
+  border-radius: 150px;
+  padding: 5px;
+}
+.btn:hover{
+  transform: translateY(3px) scale(1.2);
+}
+.margin{
+  margin: 9px;
+}
+.no-border{
+  border:0px;
+  text-decoration: none;
+  outline: none;
+}
+.btn-cross{
+  text-decoration: none;
+  border:0px;
+  background-color: white;
+  padding: 0;
+}
+.btn-heading{
+  font-size: 19px;
+  font-weight: 400;
+}
+.btn-down{
+  display: block;
+}
+.btn-inline{
+  display: inline-block;
+}
+.block{
+  display: block;
+}
+.large{
+  width:100%
+}
+.border{
+  border: 0;
+  border-bottom: solid grey 1px;
+  transition:all .2s
+}
+.border:focus{
+  border:0;
+  border-bottom: solid purple 3px
+}
+.border-2:focus{
+  border:0;
+  border-bottom: solid purple 3px
+}
+.margin-large{
+  margin:20px;
+}
