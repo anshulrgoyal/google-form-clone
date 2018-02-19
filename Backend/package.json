@@ -1,0 +1,22 @@
+{
+  "name": "google-form-backend",
+  "version": "1.0.0",
+  "description": "project 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anshul goyal",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^4.13.7",
+    "passport": "^0.4.0"
+  }
+}
