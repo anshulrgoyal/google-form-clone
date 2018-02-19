@@ -15,20 +15,6 @@
   box-shadow: 15px 15px 15px grey;
 }
 
-
-
-.inicon {
-	width: 100%;
-	height: 100%;
-	transform: scale(.7);
-}
-
-.intext {
-	opacity: 0;
-	transition: all .2s;
-}
-
-
 .btn{
     margin: 8px 10px;
   font-size:20px;
