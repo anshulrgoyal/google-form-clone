@@ -1,39 +1,140 @@
-.container{
-  padding: 10%
+.container {
+  position:relative;
+  left:11%;
+  margin: 4%;
+ border: 2px solid black;
+  cursor: pointer;
+  background: white;
+  text-decoration: none;
+  padding:5% 10%;
+  box-shadow: 5px 5px 5px grey;
+  display: inline-block;
+}
+.container:hover,
+.container:focus {
+  box-shadow: 15px 15px 15px grey;
 }
 
+
+
+.inicon {
+	width: 100%;
+	height: 100%;
+	transform: scale(.7);
+}
+
+.intext {
+	opacity: 0;
+	transition: all .2s;
+}
+
+
 .btn{
-  margin: 9px;
-  background-color: cornflowerblue;
+    margin: 8px 10px;
+  font-size:20px;
+  background-color:orange;
   color:black;
   border-radius: 150px;
   padding: 5px;
-}
+  }
+
 .btn:hover{
-  transform: translateY(3px) scale(1.2);
+ transform: translateY(-10px);
+  transition-duration:.1s;
+  }
+
+
+
+/*submit button animation*/
+@-webkit-keyframes submitbutton {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
+
+@keyframes submitbutton {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.btn-submit {
+ margin-top:60px;
+  font-family:comicsans;
+	border: 2px solid black;
+	border-radius: 40px;
+	font-size: 26px;
+	padding: 4px 40px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.btn-submit:hover {
+	border-color: black;
+-webkit-animation-name: submitbutton;
+  animation-name: submitbutton;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+}
+
 .margin{
   margin: 9px;
 }
-.no-border{
+.no-border1{color:black;
   border:0px;
   text-decoration: none;
   outline: none;
 }
-.btn-cross{
+
+.no-border{font-family:comicsans;
+  color:#0099cc;
+  font-size:19px;
+  border:0px;
+  text-decoration: none;
+  outline: none;
+}
+
+.no-border2{
+  border:0px;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-cross{ color:red;
   text-decoration: none;
   border:0px;
   background-color: white;
   padding: 0;
 }
 .btn-heading{
-  font-size: 19px;
+  font-family: algerian;
+  font-size: 29px;
   font-weight: 400;
 }
-.btn-down{
+.btn-down{font-family:times;
+  font-size:21px;
+  color:orange;
   display: block;
+  margin:30px 30px;
 }
-.btn-inline{
+.btn-inline{ color:black;
   display: inline-block;
 }
 .block{
@@ -49,12 +150,24 @@
 }
 .border:focus{
   border:0;
-  border-bottom: solid purple 3px
+  border-bottom: solid black 2px
 }
-.border-2:focus{
+.border-2:focus{ color:#0099cc;
   border:0;
-  border-bottom: solid purple 3px
+  border-bottom: solid orange 2px
+}
+.border-3:focus{
+  border:0;
+  border-bottom: solid orange 2px
+}
+.border-4:focus{color:black;
+  border:0;
+  border-bottom: solid orange 2px
+}
+.border-5:focus{ color:black;
+  border:0;
+  border-bottom: solid orange 2px
 }
 .margin-large{
-  margin:20px;
+  margin:80px;
 }

@@ -124,10 +124,12 @@ class App extends Component {
       border: "0",
       textDecoration: "none",
     }
+
     var inputs = this.state.input.map((data, i) => {
       return (
+
         <div key={i} className="margin-large">
-          <input value={data.name} className="no-border btn-heading margin border-2"
+          <input value={data.name} className="no-border1 btn-heading margin border-5"
             name={`value-${i}`} onChange={this.handleChange} />
           <input type="sunmit" className="btn-cross btn-inline"
             onClick={this.delete1} name={`value-${i}`}
@@ -140,7 +142,7 @@ class App extends Component {
       let label = i;
       return (
         <div key={i} className="margin-large">
-          <input type="text" className="radio-group btn-heading border-2" name={`lable-${i}`}
+          <input type="text" className="radio-group btn-heading border-3" name={`lable-${i}`}
             onChange={this.handleChange3} value={data.name} style={style} />
           <input type="submit" onClick={this.addRadioButton} value="+"
             name={`value-${i}`} className="btn-cross" />
@@ -169,7 +171,7 @@ class App extends Component {
     var date = this.state.datepicker.map((data, i) => {
       return (
         <div>
-          <input type="text" className="no-border margin-large margin border-2 btn-heading"
+          <input type="text" className="no-border2 margin-large margin border-4 btn-heading"
             value={this.state.datepicker[i].name}
             name={`value-${i}`} onChange={this.handleChange4} />
           <DatePicker className="margin-large" />
@@ -195,6 +197,7 @@ class App extends Component {
         <button className="btn-submit"
           onClick={this.done1}>done</button>
       </div>
+
     );
   }
 }
