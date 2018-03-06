@@ -10,9 +10,7 @@ const auth =require('./routes/auth')
 const mailer=require('@sendgrid/mail')
 const key =require('./conf/key')
 const jwt=require('jsonwebtoken')
-mailer.setApiKey('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')
-mongoose.connect('mongodb://anshulrgoyal:8285578793aA#@ds241578.mlab.com:41578/poleprimate',
-{useMongoClient:true});
+
 mongoose.Promise = global.Promise;
 app.use(bodyParser.json());
 app.use(function(req,res,next){
